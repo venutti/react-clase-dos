@@ -1,0 +1,16 @@
+.fancy-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.fancy-input--dark {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.fancy-input--light {
+  color: black;
+  border-bottom: 1px solid black;
+}
