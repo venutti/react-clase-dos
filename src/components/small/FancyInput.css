@@ -3,6 +3,11 @@
   border: none;
   outline: none;
   font-size: 20px;
+  transition: border-bottom ease-in-out 0.2s;
+}
+
+.fancy-input:focus {
+  border-bottom-color: rgb(0, 0, 90);
 }
 
 .fancy-input--dark {
