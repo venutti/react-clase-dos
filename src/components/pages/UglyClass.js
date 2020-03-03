@@ -1,8 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import FancyButton from '../small/FancyButton';
 
-//eslint-disable-next-line
-const BeautifulFunction = ({ name }) => {
+export const BeautifulFunction = ({ name }) => {
   const [counter, setCounter] = useState(0);
   useEffect(() => {
     document.title = `Counter: ${counter}`;

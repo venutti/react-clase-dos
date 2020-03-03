@@ -9,6 +9,6 @@ const WindowTracker = () => {
     window.addEventListener('resize', onChangeWidth);
     return () => window.removeEventListener('resize', onChangeWidth);
   });
-  return <div>{width}</div>;
+  return <div>Window width: {width}</div>;
 };
 export default WindowTracker;
