@@ -57,7 +57,7 @@ class UglyClass extends Component {
       <div>
         <div>{this.props.name}</div>
         <div>Counter: {this.state.counter}</div>
-        <FancyButton fullBorder onClick={() => this.setState({ counter: this.state.counter + 1 })}>
+        <FancyButton onClick={() => this.setState({ counter: this.state.counter + 1 })}>
           Add to counter!
         </FancyButton>
       </div>

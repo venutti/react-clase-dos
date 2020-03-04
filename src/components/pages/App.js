@@ -47,7 +47,12 @@ function App() {
     <div className="app">
       <nav className="app-navigation">
         {Object.entries(pages).map(([pageKey, pageData]) => (
-          <FancyButton key={pageKey} onClick={() => setCurrentPage(pageKey)}>
+          <FancyButton
+            active={pageKey === currentPage}
+            key={pageKey}
+            navigation
+            onClick={() => setCurrentPage(pageKey)}
+          >
             {pageData.name}
           </FancyButton>
         ))}

@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import cx from 'classnames';
 import './FancyButton.css';
 
-function FancyButton({ className, fullBorder = false, ...props }) {
+function FancyButton({ className, active = false, navigation = false, ...props }) {
   return (
     <button
-      className={cx('navigation-button', className, {
-        'navigation-button--full-border': fullBorder,
+      className={cx('fancy-button', className, {
+        'fancy-button--navigation': navigation,
+        'fancy-button--active': active,
       })}
       {...props}
     />
@@ -16,7 +17,8 @@ function FancyButton({ className, fullBorder = false, ...props }) {
 
 FancyButton.propTypes = {
   className: PropTypes.string,
-  fullBorder: PropTypes.bool,
+  navigation: PropTypes.bool,
+  active: PropTypes.bool,
 };
 
 export default FancyButton;

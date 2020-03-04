@@ -42,9 +42,7 @@ const WinnerCard = ({ show, winner, onRestart = () => {} }) => {
       <span className="winner-card-text">
         {winner ? `Player ${winner} has won the game!` : "It's a tie!"}
       </span>
-      <FancyButton fullBorder onClick={onRestart}>
-        Play again?
-      </FancyButton>
+      <FancyButton onClick={onRestart}>Play again?</FancyButton>
     </div>
   );
 };
