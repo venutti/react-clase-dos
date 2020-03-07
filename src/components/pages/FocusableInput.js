@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import FancyButton from '../small/FancyButton';
+import FancyInput from '../small/FancyInput';
 import './FocusableInput.css';
 
 const FocusableInput = () => {
@@ -7,7 +8,7 @@ const FocusableInput = () => {
   return (
     <div className="focusable-input-wrapper">
       {/* Qué pasa si cambiamos este input por nuestro FancyInput? */}
-      <input className="focusable-input" ref={inputRef} />
+      <FancyInput className="focusable-input" ref={inputRef} />
       <FancyButton onClick={() => inputRef.current.focus()}>Focus that input!</FancyButton>
     </div>
   );

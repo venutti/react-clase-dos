@@ -5,7 +5,9 @@ const TitleChanger = () => {
   const [value, setValue] = useState('');
   useEffect(() => {
     document.title = value;
-    // Qué pasa si salimos de esta página?
+    return () => {
+      document.title = 'React App';
+    };
   });
   return (
     <FancyInput title="Cambiame!" value={value} onChange={event => setValue(event.target.value)} />
